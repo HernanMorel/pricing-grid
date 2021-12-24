@@ -1,0 +1,35 @@
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background-color: #e6eff5;
+}
+
+.main-container {
+  width: 635px;
+  height: 475px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+}
+
+.prices-row {
+  display: flex;
+}
+
+.col-1 {
+  flex: 1;
+}
+.col-2 {
+  flex: 1;
+}
+
+.items {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
