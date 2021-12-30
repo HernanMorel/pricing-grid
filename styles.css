@@ -1,35 +1,118 @@
+/* The css below will include css flexbox */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap");
 body {
+  /* Here you want to explicitly state the margin, padding, font-family, 
+  background-color,display, justify content,
+  align items, height, color of the font. */
+  padding: 0;
+  margin: 0;
   font-family: "Karla", sans-serif;
-  font-size: 16px;
   background-color: #e6eff5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
 }
 
 .main-container {
-  width: 635px;
-  height: 475px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 8px;
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
 }
 
-.prices-row {
+.upper-container {
+  background-color: #ffffff;
+  padding: 2em 6em 2em 2em;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.main-heading {
+  color: #2ab3b1;
+}
+
+.slogan {
+  color: #c0df33;
+  font-size: 1.1875em;
+  font-weight: 700;
+}
+
+.text-content {
+  color: #9aa7be;
+  margin-block-start: 1em;
+  line-height: 1.625em;
+}
+
+.flex-container {
   display: flex;
 }
 
-.col-1 {
+.flex-container .pricing-container {
+  background-color: #2ab3b1;
   flex: 1;
-}
-.col-2 {
-  flex: 1;
+  padding: 2em;
+  color: #ffffff;
+  border-bottom-left-radius: 8px;
+  font-weight: 700;
 }
 
-.items {
-  font-size: 11px;
-  text-align: center;
+.about {
+  background-color: #4abebd;
+  flex: 1;
+  padding: 2em;
+  border-bottom-right-radius: 8px;
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.about p {
+  color: #ffffff;
+  opacity: 0.6;
+  line-height: 1.4em;
+}
+
+.pricing-container {
+  color: #ffffff;
+}
+
+.pricing-container .pricing {
+  color: #d3d3d3;
+}
+.pricing-container span {
+  font-size: 2em;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.dollar {
+  line-height: 1.625em;
+  color: #e9e8e8;
+}
+
+.pricing-container .signup {
+  width: 90%;
+  background-color: #c0df33;
+  color: white;
+  padding: 1em;
+  font-weight: 700;
+  line-height: 1.16875em;
+  border-radius: 5px;
+  border: 0px none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+}
+
+@media only screen and (max-width: 800px) {
+  .main-container {
+    width: 90%;
+    height: 90%;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-container .pricing-container {
+    border-radius: 0;
+  }
+  .about {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
 }
